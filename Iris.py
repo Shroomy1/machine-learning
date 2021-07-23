@@ -23,7 +23,6 @@ dataset = pd.read_csv(url, names=names)
 dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 #dataset.hist()
 dataset.plot.scatter(x='Sepal_Length', y='Sepal_Width')
-scatter_matrix(dataset)
 #dataset.plot(kind='scatter', subplots=True, layout=(3,3), sharex=False, sharey=False)
 plt.show()
 
