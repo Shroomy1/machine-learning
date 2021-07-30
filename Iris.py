@@ -60,3 +60,22 @@ predictions = model.predict(X_validation)
 print(accuracy_score(Y_validation, predictions))
 print(confusion_matrix(Y_validation, predictions))
 print(classification_report(Y_validation, predictions))
+
+print("-------------------------------------------")
+print("MAKING PREDICTIONS")
+# input_array = []
+# input_array_size = int(input("Array Size: "))
+
+# for i in range(input_array_size):
+# 	v = input("Element")
+# 	input_array = numpy.append(input_array, v)
+# print(input_array)
+# numpy_input_array = numpy.array(input_array)
+
+# prediction = SVC.predict(numpy_input_array)
+# print(prediction)
+
+X_new = numpy.array([[3, 2, 4, 0.2], [  4.7, 3, 1.3, 0.2 ]])
+print("X_new.shape: {}".format(X_new.shape))
+prediction = SVC.predict(X_new)
+print("Prediction of Species: {}".format(prediction))
