@@ -74,8 +74,8 @@ print("MAKING PREDICTIONS")
 
 # prediction = SVC.predict(numpy_input_array)
 # print(prediction)
-
+# -------------------------------------------------------------------------
 X_new = numpy.array([[3, 2, 4, 0.2], [  4.7, 3, 1.3, 0.2 ]])
 print("X_new.shape: {}".format(X_new.shape))
-prediction = SVC.predict(X_new)
+prediction = model.predict(X_new)
 print("Prediction of Species: {}".format(prediction))
